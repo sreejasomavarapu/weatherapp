@@ -1,0 +1,11 @@
+<form action="" method="POST">
+    {% csrf_token %}
+{{form}}
+<input type="submit">
+</form>
+<br>
+temperature : {{temperature}}K
+<br>
+description : {{description}}
+
+<img src="http://openweathermap.org/img/w/{{icon}}.png" alt="">
